@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Documento de prueba</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="header-left">
+          <div class="site-name">Lumière Experience</div>
+        </div>
+        <nav class="header-right">
+          <div class="nav-menu">
+            <a class="nav-item" href="#inicio" data-es="Inicio" data-en="Home"
+              >Inicio</a
+            >
+            <a
+              class="nav-item"
+              href="#proyectos"
+              data-es="Proyectos"
+              data-en="Projects"
+              >Tienda</a
+            >
+          </div>
+        </nav>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <div class="carousel-slide active">
+            <img src="imagenes/Promocional1.png" alt="Imagen 1" />
+          </div>
+          <div class="carousel-slide">
+            <img src="imagenes/Promocional2.png" alt="Imagen 2" />
+          </div>
+          <div class="carousel-slide">
+            <img src="imagenes/Promocional3.png" alt="Imagen 3" />
+          </div>
+          <div class="carousel-slide">
+            <img src="imagenes/Promocional4.png" alt="Imagen 4" />
+          </div>
+        </div>
+        <button class="carousel-prev" type="button" onclick="changeSlide(-1)">
+          ❮
+        </button>
+        <button class="carousel-next" type="button" onclick="changeSlide(1)">
+          ❯
+        </button>
+        <div class="carousel-dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="quienes-somos">
+        <h1>¿Quienes somos?</h1>
+        <p>
+          Las películas siempre han sido más que solo ver una pantalla. Son
+          emociones, mundos, recuerdos y momentos que se quedan contigo incluso
+          después de que terminan los créditos. Nuestra propuesta nace de la
+          idea de una watch party: transformar el espacio, la comida y el
+          ambiente para vivir una película de verdad. Desde decoración temática
+          y vestimenta inspirada en cada historia, hasta platillos diseñados
+          especialmente para la función, buscamos convertir cada proyección en
+          una experiencia inmersiva. No venimos solo a proyectar películas.
+          Creamos experiencias donde el cine se vive con todos los sentidos.
+        </p>
+        <div class="quienes-somos2">
+          <div class="cine">
+            <h3>Cine</h3>
+            <p>
+              Cada función está cuidadosamente ambientada para transportarte al
+              universo de la película. La música, iluminación y detalles del
+              espacio están diseñados para que te sientas dentro de la historia
+              desde el momento en que llegas.
+            </p>
+            <a class="cartelera-link" href="#">Ver más</a>
+          </div>
+          <div class="comida">
+            <h3>Comida</h3>
+            <p>
+              Mientras disfrutas la película, se servirán platillos y bebidas
+              temáticas inspiradas en el mundo y la estética de cada función,
+              convirtiendo la comida en parte de la experiencia narrativa.
+            </p>
+            <a class="cartelera-link" href="#">Ver más</a>
+          </div>
+          <div class="experiencia">
+            <h3>Experiencia</h3>
+            <p>
+              Cada evento incluye pequeños detalles que hacen única la noche:
+              una bolsa de regalo temática, espacios para fotografías y
+              dinámicas especiales que transforman una simple salida al cine en
+              un recuerdo inolvidable.
+            </p>
+            <a class="cartelera-link" href="#">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARTELERA -->
+      <section class="cartelera">
+        <div class="cartelera-header">
+          <h2>Cartelera</h2>
+        </div>
+        <div class="cartelera-grid">
+          <article class="cartelera-card">
+            <img
+              src="imagenes/El-senor-de-los-anillos.avif"
+              alt="Cartelera 1"
+            />
+            <h3>El Señor de los Anillos</h3>
+            <p>
+              Disfruta de una noche temática inspirada en la Tierra Media
+              mientras ves la pelicula, acompañado de un menú élfico y
+              decoración inspirada en el universo de Tolkien.
+            </p>
+            <a class="cartelera-card-link" href="#">Ver más</a>
+          </article>
+          <article class="cartelera-card">
+            <img src="imagenes/Harry-potter.avif" alt="Cartelera 2" />
+            <h3>Harry Potter</h3>
+            <p>
+              Vive la magia de Hogwarts con una función especial de Harry
+              Potter, donde podrás disfrutar de la película con un menú temático
+              y decoración inspirada en el mundo mágico creado por J.K. Rowling.
+            </p>
+            <a class="cartelera-card-link" href="#">Leer más</a>
+          </article>
+          <article class="cartelera-card">
+            <img src="imagenes/Shrek.avif" alt="Cartelera 3" />
+            <h3>Shrek</h3>
+            <p>
+              Ríete a carcajadas con una función especial de Shrek, donde podrás
+              disfrutar de la película con un menú temático y decoración
+              inspirada en el mundo de los cuentos de hadas.
+            </p>
+            <a class="cartelera-card-link" href="#">Leer más</a>
+          </article>
+        </div>
+        <div class="cartelera-grid">
+          <article class="cartelera-card">
+            <img src="imagenes/El-menu.jpg" alt="Cartelera 4" />
+            <h3>El menu</h3>
+            <p>
+              Siente como si estás en el mismo restaurante de la película,
+              comiendo la misma comida. Y sintiendo la tension de cada escena.
+              Una experiencia gastronómica y cinematográfica única.
+            </p>
+            <a class="cartelera-card-link" href="#">Leer más</a>
+          </article>
+          <article class="cartelera-card">
+            <img src="imagenes/Princesa-y-sapo.jpg" alt="Cartelera 5" />
+            <h3>La Princesa y el Sapo</h3>
+            <p>
+              Disfruta con la familia nuestra función especial de La Princesa y
+              el Sapo, donde podrás además podrás degustar de las delicias que
+              vez en pantalla y una decoracion inspirada en la magia de la
+              película.
+            </p>
+            <a class="cartelera-card-link" href="#">Leer más</a>
+          </article>
+          <article class="cartelera-card">
+            <img src="imagenes/Ratatouille.webp" alt="Cartelera 6" />
+            <h3>Ratatouille</h3>
+            <p>
+              Vive la experiencia de ser un chef en París con nuestra función
+              especial de Ratatouille, donde podrás disfrutar de la película
+              acompañado de un menú temático inspirado en la gastronomía
+              francesa.
+            </p>
+            <a class="cartelera-card-link" href="#">Leer más</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dots = document.querySelectorAll(".dot");
+      const navItems = document.querySelectorAll(".nav-item");
+      const langButton = document.getElementById("langButton");
+      let currentLang = "es";
+
+      function showSlide(index) {
+        currentIndex = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) =>
+          slide.classList.toggle("active", i === currentIndex),
+        );
+        dots.forEach((dot, i) =>
+          dot.classList.toggle("active", i === currentIndex),
+        );
+      }
+
+      function changeSlide(step) {
+        showSlide(currentIndex + step);
+      }
+
+      function currentSlide(index) {
+        showSlide(index);
+      }
+
+      setInterval(() => changeSlide(1), 5000);
+
+      function toggleLanguage() {
+        currentLang = currentLang === "es" ? "en" : "es";
+        navItems.forEach(
+          (item) => (item.textContent = item.dataset[currentLang]),
+        );
+        langButton.textContent = currentLang === "es" ? "EN" : "ES";
+      }
+    </script>
+  </body>
+</html>
